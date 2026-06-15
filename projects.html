@@ -9,22 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .icon-svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="nav-brand">
-        <span class="brand-icon">SZ</span>
-        司震
-      </a>
-      <ul class="nav-links">
+      <ul class="nav-links" style="margin-left: auto;">
         <li><a href="index.html">首页</a></li>
         <li><a href="index.html#skills">技术栈</a></li>
         <li><a href="index.html#projects">项目</a></li>
         <li><a href="index.html#experience">经历</a></li>
-        <li><a href="about.html">关于我</a></li>
         <li><a href="projects.html" class="nav-cta active">项目详情</a></li>
       </ul>
       <button class="nav-toggle" aria-label="菜单">
@@ -33,20 +31,19 @@
     </div>
   </nav>
 
-  <!-- ===== Page Header ===== -->
+  <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <div class="section-label">PROJECTS</div>
+      <div class="section-eyebrow" style="color: #8ab4f8;">PROJECTS</div>
       <h1>项目详情</h1>
-      <p>我的AI项目作品集 — 从智慧城市到金融风控的落地实践</p>
+      <p>我的AI项目作品集 — 从智慧城市到地震预测的落地实践</p>
     </div>
   </div>
 
-  <!-- ===== Filter & Projects ===== -->
+  <!-- Filter & Projects -->
   <section class="section">
     <div class="container">
 
-      <!-- Filter Tabs -->
       <div class="filter-tabs reveal">
         <button class="filter-tab active" data-filter="all">全部</button>
         <button class="filter-tab" data-filter="agent">Agent/大模型</button>
@@ -54,306 +51,173 @@
         <button class="filter-tab" data-filter="platform">平台系统</button>
       </div>
 
-      <!-- Project 1: 社情通 -->
+      <!-- Project 1: 12345社情通 -->
       <div class="detail-card reveal" data-category="platform agent">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">🏛️</div>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div class="project-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
           <div>
-            <h2>社情通 · 大规模社情事件分析系统</h2>
+            <h2>12345社情通 · 社情事件分析系统</h2>
             <p class="subtitle">联通（河南）产业互联网有限公司 | 智慧城市军团 | 2026.05 - 至今</p>
           </div>
         </div>
-
         <p class="desc">
-          面向基层社会治理的12345热线数据分析平台，构建多维度动态监控看板，实现大规模事件分类、舆情智能监测与分析报告自动生成。
-          系统覆盖数据采集、清洗、分析、可视化全链路，日均处理热线数据量达到万级。
+          面向基层社会治理与12345热线场景，构建集多模态消息接入、大模型事件分类、舆情智能监测与治理报告自动生成于一体的AI应用平台。
+          服务于社区网格化管理与物业事件上报工作流。
         </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">主要职责</h3>
+        <h3>我的职责</h3>
         <ul>
-          <li>负责热线数据解析与深度分析，构建大规模事件分类、舆情智能监测与分析报告自动生成系统</li>
-          <li>基于大模型能力接入Ollama本地模型，实现语音转文本与智能质检功能，分类准确率达95%+</li>
-          <li>主导知识识别、热点总结与事件建议生成的Prompt设计与接口落地</li>
-          <li>完成智能质检全流程开发，推动项目成功上线生产环境</li>
-          <li>参与社区矫正智能外呼问答系统，处理日均数据量1000+，上线智能质检与自动外呼</li>
+          <li>负责微信矩阵舆情分析模块开发，实现群聊/私聊消息的智能事件提取、分类与上报全流程</li>
+          <li>设计两步验证分类策略（LLM粗分类 → 规则增强精分类），引入置信度阈值机制降低误报</li>
+          <li>完成多模态能力集成，接入Qwen VL实现图片/视频描述，对接ASR/TTS服务打通语音处理链路</li>
+          <li>参与1.1.0版本迭代，主导通知消息识别、热点事件总结、工作建议生成等新模块的Prompt设计与接口落地</li>
         </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>大模型</span>
-          <span>多模态</span>
-          <span>Agent</span>
-          <span>知识库</span>
-          <span>ASR</span>
-          <span>DeepSeek</span>
-          <span>Ollama</span>
-          <span>Prompt工程</span>
+        <h3>项目成果</h3>
+        <ul>
+          <li>累计开发15+ API接口，覆盖话务事件分类、舆情监测、多模态理解三大业务域，已部署至生产环境</li>
+          <li>事件分类准确率提升至90%+，反垃圾识别误判率降低40%</li>
+          <li>热点事件总结模块采用分层摘要架构，支持万级事件数据的结构化分析与报告生成</li>
+          <li>项目接入5+社区网格化平台，日均处理消息1000+条，服务30+专职网格员的日常事件上报工作</li>
+        </ul>
+        <div class="project-tech" style="margin-top: 16px;">
+          <span>大模型</span><span>多模态</span><span>Qwen VL</span><span>ASR/TTS</span><span>Prompt工程</span>
         </div>
       </div>
 
-      <!-- Project 2: DataDigger -->
+      <!-- Project 2: 数据专家(Datist) -->
       <div class="detail-card reveal" data-category="agent platform">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">💰</div>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div class="project-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
           <div>
-            <h2>DataDigger · AI金融风控平台</h2>
-            <p class="subtitle">中国科学院空天信息创新研究院 | 北京中科闻歌 | 2025.11 - 2026.05</p>
+            <h2>数据专家(Datist) · AI Agent低代码开发平台</h2>
+            <p class="subtitle">中国地震局地球物理研究所(北京求索数智科技发展有限公司) | 2025.11 - 2026.05</p>
           </div>
         </div>
-
         <p class="desc">
-          基于DAG拓扑扩展的AI Agent低代码开发平台，实现模型与工作流的可视化编排和快速部署。
-          平台面向复杂业务场景，提供AI决策辅助功能，涵盖数据管理、模型管理、知识管理和模型市场等核心模块。
+          面向业务人员打造基于DAG拓扑编排的AI Agent低代码开发平台，实现模型、工具与工作流的可视化编排和快速部署。
         </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">主要职责</h3>
+        <h3>我的职责</h3>
         <ul>
-          <li>负责Agent工作流开发及模型推理服务封装，基于FastAPI构建接入层并添加DAG引擎注入</li>
-          <li>开发Tool Calling工具链，通过数据回填机制扩展Agent能力边界，支持参数与来源动态绑定</li>
-          <li>开发贝叶斯网络训练/推理、回溯、聚类等节点的底层算法模块</li>
-          <li>主导Agent平台200+自动化回归测试用例编写与性能压测</li>
-          <li>完成Agent项目上线，日均处理请求10万+，已上线多个生产环境</li>
+          <li>负责Agent工作流节点开发及模型推理服务封装，基于Flask构建算法中台并接入DAG编排引擎</li>
+          <li>设计Tool Calling协议，通过元数据实现远程工具动态注册与热更新，支持参数与上游数据自动注入</li>
+          <li>开发贝叶斯网络训练/推理、回归、聚类等节点，覆盖模型调用、数据检索、工具执行等能力编排</li>
+          <li>支持SuperNode子图嵌套、单步调试与Cron定时调度，实现工具链与任务链的可视化编排执行</li>
         </ul>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary); margin-top: 20px;">项目成果</h3>
+        <h3>项目成果</h3>
         <ul>
-          <li>完成Agent平台开发，支持复杂业务场景的AI决策辅助</li>
-          <li>平台日均处理请求10万+，覆盖智慧城市、金融风控等多个领域</li>
-          <li>完成Agent项目上线，支持复杂任务的智能编排与自动化执行</li>
+          <li>开发Agent节点20+个，打通C#编排引擎 ↔ Python算法服务跨语言Tool Calling链路</li>
+          <li>支持模型调用、数据检索、工具执行等能力可视化编排，日均工作流调用100+，已部署多个生产环境</li>
         </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>DAG编排</span>
-          <span>Tool Calling</span>
-          <span>FastAPI</span>
-          <span>数据回填</span>
-          <span>SFT</span>
-          <span>贝叶斯网络</span>
-          <span>自动化测试</span>
+        <div class="project-tech" style="margin-top: 16px;">
+          <span>DAG编排</span><span>Tool Calling</span><span>Flask</span><span>SuperNode</span><span>贝叶斯网络</span>
         </div>
       </div>
 
-      <!-- Project 3: 智问 -->
-      <div class="detail-card reveal" data-category="rag agent">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">💬</div>
+      <!-- Project 3: "灵石" -->
+      <div class="detail-card reveal" data-category="agent platform">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div class="project-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m16.66-5.66l-4.24 4.24m-2.84-2.84L6.34 6.34m11.32 11.32l-4.24-4.24m-2.84 2.84l-4.24 4.24"/></svg>
+          </div>
           <div>
-            <h2>"智问" · 多模型智能对话助手</h2>
-            <p class="subtitle">北京全睿智科技有限公司 | 2025.09 - 2025.11</p>
+            <h2>"灵石" · 多模型协同推理与智能决策系统</h2>
+            <p class="subtitle">中国地震局地球物理研究所(北京求索数智科技发展有限公司) | 2025.11 - 2026.05</p>
           </div>
         </div>
-
         <p class="desc">
-          基于DAG路由的多模型架构，集成RAG知识库与本地化部署能力，支持多模型路由匹配和Prompt自适应调整。
-          系统覆盖复杂多模型路由、模型管理、知识库检索增强与本地化部署等功能。
+          面向复杂业务场景构建AI决策辅助平台，实现模型管理、知识管理、多模型协同推理与报告自动生成。
         </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">主要职责</h3>
+        <h3>我的职责</h3>
         <ul>
-          <li>构建多模型路由架构，实现基于DAG的智能模型匹配与调度</li>
-          <li>集成RAG知识库，支持文档检索增强生成</li>
-          <li>实现Prompt自适应调整机制，提升对话质量</li>
-          <li>完成系统本地化部署，支持Docker容器化部署方案</li>
+          <li>构建多模型协同推理框架，支持多模型并行编排与动态权重融合，实现区域级结果聚合与研判输出</li>
+          <li>负责模型仓库与知识管理体系建设，涵盖模型入库、版本管理、适用区域标注、指标库与预报策略配置</li>
+          <li>设计并实现推理服务层，基于DAG网络提供单/多模型联合推理、批量预测与回溯验证能力</li>
+          <li>实现会商报告自动化生成链路，支持PDF/PPTX格式输出与在线预览</li>
         </ul>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary); margin-top: 20px;">项目成果</h3>
+        <h3>项目成果</h3>
         <ul>
-          <li>完成多模型路由架构设计，模型匹配准确率达90%+</li>
-          <li>构建企业级RAG知识库系统，检索准确率显著提升</li>
-          <li>系统完整落地企业内部平台并投入实际应用</li>
+          <li>落地多模型协同推理与结果融合能力，覆盖重点区的单模型比选与多模型联合研判，显著提升决策效率</li>
+          <li>完成60+ API开发，集成自动化报告生成与实时通信能力，代码录入谛听团队数字化项目仓库</li>
         </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>多模型路由</span>
-          <span>RAG</span>
-          <span>Docker</span>
-          <span>本地化部署</span>
-          <span>Prompt工程</span>
-          <span>知识库</span>
+        <div class="project-tech" style="margin-top: 16px;">
+          <span>多模型协同</span><span>DAG推理</span><span>模型仓库</span><span>PDF/PPTX</span><span>自动化报告</span>
         </div>
       </div>
 
       <!-- Project 4: 工业文档 -->
       <div class="detail-card reveal" data-category="rag platform">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">📄</div>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div class="project-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
           <div>
             <h2>工业文档智能解析与问答平台</h2>
-            <p class="subtitle">北京全睿智科技有限公司 | 2025.09 - 2025.11</p>
+            <p class="subtitle">北京仝睿科技有限公司 | 2025.09 - 2025.11</p>
           </div>
         </div>
-
         <p class="desc">
-          面向复杂工业文档的智能分析场景，构建集文档解析、OCR识别、多模态理解、知识抽取与智能问答于一体的AI应用平台。
-          通过多模态文档解析与GraphRAG技术，实现从非结构化文档到结构化知识的自动化转换。
+          面向复杂工业文档智能分析场景，构建集文档解析、多模态理解、知识检索与智能问答于一体的AI应用平台，
+          实现图文混排文档理解、关键信息抽取及智能问答服务。
         </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">主要职责</h3>
+        <h3>我的职责</h3>
         <ul>
-          <li>构建多模态文档理解Pipeline，集成OCR识别、图文对应及知识抽取能力</li>
-          <li>基于Qwen2.5-7B进行LoRA微调，优化模型在特定场景下的表现</li>
-          <li>实现GraphRAG知识图谱构建，从复杂文档中抽取实体与关系</li>
-          <li>完成文件解析、知识抽取、模型推理、问答服务等全模块开发</li>
-          <li>系统完整落地企业内部RAG平台并投入实际应用</li>
+          <li>负责多模态数据处理Pipeline设计与开发，构建文档解析、OCR识别、图文对齐及知识抽取流程</li>
+          <li>基于Qwen2.5-VL-7B开展LoRA指令微调，提升复杂图文场景下的信息理解与特征提取能力</li>
+          <li>负责RAG检索增强问答链路开发，实现知识检索、上下文构建与智能问答</li>
+          <li>基于FastAPI完成模型推理服务封装与部署，对接企业内部智能分析平台</li>
         </ul>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary); margin-top: 20px;">项目成果</h3>
+        <h3>项目成果</h3>
         <ul>
-          <li>完成多模态文档解析Pipeline，支持PDF、Word、图片等多种格式</li>
-          <li>知识抽取准确率达90%+，构建结构化知识图谱</li>
-          <li>构建完整的企业级RAG问答系统，回答准确率显著提升</li>
+          <li>完成文档解析、知识构建、模型微调、问答服务部署全链路开发</li>
+          <li>构建多模态知识问答系统，实现复杂图文信息精准检索与问答</li>
+          <li>关键信息抽取准确率提升至90%+，核心匹配任务F1达到0.90</li>
+          <li>系统成功接入企业内部业务平台并投入实际应用</li>
         </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>OCR</span>
-          <span>多模态</span>
-          <span>GraphRAG</span>
-          <span>知识抽取</span>
-          <span>LoRA微调</span>
-          <span>Qwen2.5</span>
-          <span>知识图谱</span>
+        <div class="project-tech" style="margin-top: 16px;">
+          <span>Qwen2.5-VL-7B</span><span>LoRA微调</span><span>RAG</span><span>OCR</span><span>FastAPI</span>
         </div>
       </div>
 
-      <!-- Project 5: 数据回填 -->
-      <div class="detail-card reveal" data-category="agent">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">🔄</div>
-          <div>
-            <h2>Agent数据回填与工具链系统</h2>
-            <p class="subtitle">中国科学院空天信息创新研究院 | 2025.11 - 2026.05</p>
-          </div>
-        </div>
-
-        <p class="desc">
-          为Agent平台开发的数据回填机制与Tool Calling工具链系统，通过参数与来源的动态绑定，
-          实现Agent能力的灵活扩展。支持Supernote千问子模型集成、单步调试与Con机制。
-        </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">技术亮点</h3>
-        <ul>
-          <li>实现Tool Calling工具链，支持参数与来源的动态绑定</li>
-          <li>开发数据回填机制，扩展Agent的能力边界</li>
-          <li>集成Supernote千问子模型，支持灵活的工具编排</li>
-          <li>实现单步调试与Con机制，提升开发调试效率</li>
-        </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>Tool Calling</span>
-          <span>数据回填</span>
-          <span>FastAPI</span>
-          <span>Supernote</span>
-          <span>调试工具</span>
-        </div>
-      </div>
-
-      <!-- Project 6: 贝叶斯网络 -->
+      <!-- Project 5: 科研成果 -->
       <div class="detail-card reveal" data-category="platform">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">🧮</div>
-          <div>
-            <h2>贝叶斯网络算法模块</h2>
-            <p class="subtitle">中国科学院空天信息创新研究院 | 2025.11 - 2026.05</p>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <div class="project-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
-        </div>
-
-        <p class="desc">
-          为DataDigger平台开发的贝叶斯网络底层算法模块，涵盖训练、推理、回溯、聚类等核心功能，
-          为金融风控场景提供概率推理与决策支持能力。
-        </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">技术实现</h3>
-        <ul>
-          <li>实现贝叶斯网络的结构学习与参数学习</li>
-          <li>开发推理引擎，支持概率推理与因果分析</li>
-          <li>实现回溯功能，支持决策路径的可解释性分析</li>
-          <li>集成聚类算法，支持数据的自动分组与特征提取</li>
-        </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>贝叶斯网络</span>
-          <span>概率推理</span>
-          <span>聚类算法</span>
-          <span>结构学习</span>
-          <span>可解释AI</span>
-        </div>
-      </div>
-
-      <!-- Project 7: 社区矫正 -->
-      <div class="detail-card reveal" data-category="agent rag">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">📞</div>
-          <div>
-            <h2>社区矫正智能外呼问答系统</h2>
-            <p class="subtitle">联通（河南）产业互联网有限公司 | 2026.05 - 至今</p>
-          </div>
-        </div>
-
-        <p class="desc">
-          基于大模型的智能外呼问答系统，集成ASR语音识别、NLU自然语言理解与TTS语音合成技术，
-          实现社区矫正场景下的自动化外呼与智能问答。
-        </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">主要职责</h3>
-        <ul>
-          <li>参与系统需求分析与架构设计，实现智能外呼全流程自动化</li>
-          <li>处理日均数据量1000+，上线智能质检与自动外呼功能</li>
-          <li>集成大模型能力，实现自然流畅的对话交互</li>
-        </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>大模型</span>
-          <span>ASR</span>
-          <span>TTS</span>
-          <span>智能外呼</span>
-          <span>质检</span>
-        </div>
-      </div>
-
-      <!-- Project 8: 科研论文 -->
-      <div class="detail-card reveal" data-category="platform">
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
-          <div class="project-icon">📝</div>
           <div>
             <h2>SCI/EI科研成果</h2>
             <p class="subtitle">应急管理大学 | 2024.09 - 至今</p>
           </div>
         </div>
-
         <p class="desc">
-          在研究生阶段发表多篇高水平学术论文，提出SOTA级算法优化方案，涵盖故障诊断、网络结构学习等前沿方向。
+          在研究生阶段发表多篇高水平学术论文，提出SOTA级算法优化方案，涵盖贝叶斯网络拓扑学习、智能算法优化等前沿方向。
         </p>
-
-        <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">论文成果</h3>
+        <h3>论文成果</h3>
         <ul>
-          <li><strong>SCI-EI期刊</strong>：《Evolutionary-Guided Bayesian Network...》提出TSBABP预习算法，SOTA速度提升7-26倍</li>
-          <li><strong>EI期刊</strong>：《EvBNE: Prediction of...Network Structure Learning》优化IS算法，SOTA计算智能算法优化方向</li>
-          <li><strong>软著</strong>：面向复杂网络的地震观测辅助系统（第一著作权人）</li>
-          <li><strong>软著</strong>：地震前兆多源异构数据采集与集成系统（第一著作权人）</li>
+          <li><strong>SCI一区Top（JCR Q1，一作）</strong>：<a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417426018142" target="_blank" style="color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px;">《Evidence-Guided Bayesian Network...》</a>提出ESSAP拓扑学习算法，SOTA，速度提升7-28倍</li>
+          <li><strong>EI（一作）</strong>：<a href="http://www.earth-science.net/article/doi/10.3799/dqkx.2025.186" target="_blank" style="color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px;">《Probabilistic Prediction of...Network Structure Learning》</a>优化BES+HC算法，SOTA（智能算法优化方向）</li>
         </ul>
-
-        <div class="project-tech" style="margin-top: 20px;">
-          <span>SCI/EI论文</span>
-          <span>SOTA算法</span>
-          <span>贝叶斯网络</span>
-          <span>故障诊断</span>
-          <span>软著</span>
+        <h3>软件著作权</h3>
+        <ul>
+          <li><strong>软著两项（第一著作权人）</strong>：基于贝叶斯网络的地震预测辅助系统、地质断层数据采集分析集成系统</li>
+        </ul>
+        <div class="project-tech" style="margin-top: 16px;">
+          <span>SCI一区Top</span><span>JCR Q1</span><span>SOTA算法</span><span>贝叶斯网络</span><span>软著2项</span>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-left">
-        &copy; 2026 司震 · Built with ❤️ and GitHub Pages
+      <div class="footer-bottom">
+        <p>&copy; 2026 司震. All rights reserved.</p>
       </div>
-      <ul class="footer-links">
-        <li><a href="https://github.com/foxpup11" target="_blank">GitHub</a></li>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">关于我</a></li>
-      </ul>
     </div>
   </footer>
 

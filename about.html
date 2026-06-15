@@ -9,22 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .icon-svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="nav-brand">
-        <span class="brand-icon">SZ</span>
-        司震
-      </a>
-      <ul class="nav-links">
+      <ul class="nav-links" style="margin-left: auto;">
         <li><a href="index.html">首页</a></li>
         <li><a href="index.html#skills">技术栈</a></li>
         <li><a href="index.html#projects">项目</a></li>
         <li><a href="index.html#experience">经历</a></li>
-        <li><a href="about.html" class="active">关于我</a></li>
         <li><a href="projects.html" class="nav-cta">项目详情</a></li>
       </ul>
       <button class="nav-toggle" aria-label="菜单">
@@ -33,50 +31,57 @@
     </div>
   </nav>
 
-  <!-- ===== Page Header ===== -->
+  <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <div class="section-label">ABOUT ME</div>
+      <div class="section-eyebrow" style="color: #8ab4f8;">ABOUT ME</div>
       <h1>关于我</h1>
-      <p>一名热爱AI技术、专注于大模型工程化落地的研究生</p>
+      <p>27届应届 | Agent工程师方向 | 应急管理大学硕士</p>
     </div>
   </div>
 
-  <!-- ===== About Intro ===== -->
+  <!-- About Intro -->
   <section class="section">
     <div class="container">
-      <div class="detail-card reveal">
-        <h2>👋 自我介绍</h2>
+      <div class="detail-card reveal" style="display: flex; gap: 40px; align-items: flex-start;">
+        <div style="flex-shrink: 0;">
+          <img src="image/IDphoto.jpg" alt="司震证件照" style="width: 180px; height: 220px; object-fit: cover; border-radius: 12px; border: 1px solid var(--color-border);">
+        </div>
+        <div>
+        <h2>自我介绍</h2>
         <p class="desc">
           我是司震，目前就读于应急管理大学（中国地震局联建）计算机与信息工程学院，攻读硕士学位，研究方向为灾害信息处理技术与地震AI大模型。
-          <br><br>
-          我热衷于将前沿AI技术转化为解决实际问题的工程化方案。在过去的一年多里，我先后在中科院空天院、北京全睿智科技和联通产业互联网公司实习，
+        </p>
+        <p class="desc">
+          我热衷于将前沿AI技术转化为解决实际问题的工程化方案。在过去的一年多里，我先后在北京仝睿科技、中国地震局地球物理研究所和联通产业互联网公司实习，
           积累了从算法研究到工程落地的完整经验。我的工作涵盖大模型微调、Agent智能体系统设计、RAG知识库构建、多模态文档理解等多个前沿方向。
-          <br><br>
+        </p>
+        <p class="desc">
           我相信AI技术的核心价值在于赋能行业、解决真实问题。未来我将继续深耕AI Agent与大模型应用开发方向，致力于构建更智能、更可靠的AI系统。
         </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Education ===== -->
-  <section class="section" style="background: var(--dark-secondary);">
+  <!-- Education -->
+  <section class="section" style="background: var(--color-bg-alt);">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">教育背景</div>
+        <div class="section-eyebrow">教育背景</div>
         <h2 class="section-title">教育经历</h2>
-        <p class="section-subtitle">扎实的学术基础与前沿研究方向</p>
+        <p class="section-desc">扎实的学术基础与前沿研究方向。</p>
       </div>
 
-      <div class="edu-cards">
+      <div class="edu-grid">
         <div class="edu-card reveal">
           <span class="edu-badge">硕士研究生</span>
-          <h3>应急管理大学（中国地震局联建）</h3>
+          <h3>应急管理大学（中国地震局联培）</h3>
           <h4>计算机与信息工程学院</h4>
           <p class="edu-date">2024年09月 - 2027年06月</p>
           <p>
-            研究方向：灾害信息处理技术 · 地震AI大模型<br>
-            初试分数364分（排名1/31）
+            灾害信息处理技术（研究方向：地震AI大模型）<br>
+            初试分数363分（排名1/331）
           </p>
         </div>
 
@@ -87,38 +92,35 @@
           <p class="edu-date">2020年09月 - 2024年06月</p>
           <p>
             软件工程（大数据方向）<br>
-            GPA 3.45/5.0（前11%）· 校级优秀毕业生
+            GPA 3.8/5.0（前1%）· 校级优秀毕业生
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Work Experience ===== -->
-  <section class="section">
+  <!-- Work Experience -->
+  <section class="section" style="background: var(--color-bg-dark); color: var(--color-text-on-dark);">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">工作经历</div>
-        <h2 class="section-title">实习经历</h2>
-        <p class="section-subtitle">从算法研究到工程落地的成长之路</p>
+        <div class="section-eyebrow" style="color: #8ab4f8;">工作经历</div>
+        <h2 class="section-title" style="color: var(--color-text-on-dark);">实习经历</h2>
+        <p class="section-desc" style="color: var(--color-text-on-dark-secondary);">从算法研究到工程落地的成长之路。</p>
       </div>
 
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2026年5月 - 至今</div>
-          <div class="timeline-content">
+          <div class="timeline-card">
             <h3>大模型实习生</h3>
             <h4>联通（河南）产业互联网有限公司 | 智慧城市军团</h4>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
-              项目：社情通 — 面向基层社会治理的12345热线数据分析平台
-            </p>
+            <p class="project-label">项目：12345社情通 — 面向基层社会治理的多模态消息接入与大模型事件分类平台</p>
             <ul>
-              <li>负责热线数据解析与深度分析，构建大规模事件分类、舆情智能监测与报告自动生成系统</li>
-              <li>主导知识识别、热点总结与事件建议生成的Prompt设计与接口落地</li>
-              <li>实现多模态能力接入与Ollama本地模型集成，驱动智能质检功能</li>
-              <li>完成基于DeepSeek模型的智能质检全流程开发，模型分类准确率95%+</li>
-              <li>开发自动化数据清洗模块，处理多源异构数据，大幅提升分析效率</li>
+              <li>负责微信矩阵舆情分析模块开发，实现群聊/私聊消息的智能事件提取、分类与上报全流程</li>
+              <li>设计两步验证分类策略（LLM粗分类 → 规则增强精分类），引入置信度阈值机制降低误报</li>
+              <li>完成多模态能力集成，接入Qwen VL实现图片/视频描述，对接ASR/TTS服务打通语音处理链路</li>
+              <li>参与1.1.0版本迭代，主导通知消息识别、热点事件总结、工作建议生成等新模块的Prompt设计与接口落地</li>
             </ul>
           </div>
         </div>
@@ -126,18 +128,15 @@
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025年11月 - 2026年5月</div>
-          <div class="timeline-content">
-            <h3>算法实习生（DataDigger方向）</h3>
-            <h4>中国科学院空天信息创新研究院 | 北京中科闻歌科技发展有限公司</h4>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
-              项目：DataDigger — 基于DAG拓扑扩展的AI Agent低代码开发平台
-            </p>
+          <div class="timeline-card">
+            <h3>算法实习生</h3>
+            <h4>中国地震局地球物理研究所(北京求索数智科技发展有限公司)</h4>
+            <p class="project-label">项目：数据专家(Datist) — 基于DAG拓扑编排的AI Agent低代码开发平台</p>
             <ul>
-              <li>负责Agent工作流开发及模型推理服务封装，基于FastAPI构建接入层并添加DAG引擎注入</li>
-              <li>开发Tool Calling工具链，通过数据回填机制扩展Agent能力边界，支持参数与来源动态绑定</li>
-              <li>开发贝叶斯网络训练/推理、回溯、聚类等节点的底层算法模块</li>
-              <li>基于Supernote千问子模型、单步调试与Con机制，实现工具集成与灵活编排</li>
-              <li>主导Agent平台200+自动化回归测试用例编写与性能压测，已上线多个生产环境</li>
+              <li>负责Agent工作流节点开发及模型推理服务封装，基于Flask构建算法中台并接入DAG编排引擎</li>
+              <li>设计Tool Calling协议，通过元数据实现远程工具动态注册与热更新，支持参数与上游数据自动注入</li>
+              <li>开发贝叶斯网络训练/推理、回归、聚类等节点，覆盖模型调用、数据检索、工具执行等能力编排</li>
+              <li>支持SuperNode子图嵌套、单步调试与Cron定时调度，实现工具链与任务链的可视化编排执行</li>
             </ul>
           </div>
         </div>
@@ -145,18 +144,15 @@
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025年9月 - 2025年11月</div>
-          <div class="timeline-content">
+          <div class="timeline-card">
             <h3>算法实习生</h3>
-            <h4>北京全睿智科技有限公司</h4>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
-              项目：工业文档智能解析与问答平台 / "智问"多模型智能对话助手
-            </p>
+            <h4>北京仝睿科技有限公司</h4>
+            <p class="project-label">项目：工业文档智能解析与问答平台 — 面向复杂工业文档的多模态AI应用</p>
             <ul>
-              <li>构建多模态文档智能解析Pipeline，集成OCR识别、图文对应及知识抽取能力</li>
-              <li>实现GraphRAG知识图谱构建与智能问答系统</li>
-              <li>基于Qwen2.5-7B进行LoRA微调，优化模型在特定场景下的表现</li>
-              <li>完成文件解析、知识抽取、模型推理、问答服务等全模块开发</li>
-              <li>系统完整落地企业内部RAG平台并投入实际应用</li>
+              <li>负责多模态数据处理Pipeline设计与开发，构建文档解析、OCR识别、图文对齐及知识抽取流程</li>
+              <li>基于Qwen2.5-VL-7B开展LoRA指令微调，提升复杂图文场景下的信息理解与特征提取能力</li>
+              <li>负责RAG检索增强问答链路开发，实现知识检索、上下文构建与智能问答</li>
+              <li>基于FastAPI完成模型推理服务封装与部署，对接企业内部智能分析平台</li>
             </ul>
           </div>
         </div>
@@ -164,82 +160,117 @@
     </div>
   </section>
 
-  <!-- ===== Skills Detail ===== -->
-  <section class="section" style="background: var(--dark-secondary);">
+  <!-- Skills Detail -->
+  <section class="section" style="background: var(--color-bg-alt);">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">专业技能</div>
+        <div class="section-eyebrow">专业技能</div>
         <h2 class="section-title">技能清单</h2>
-        <p class="section-subtitle">全栈AI工程师的技术能力图谱</p>
+        <p class="section-desc">全栈AI工程师的技术能力图谱。</p>
       </div>
 
       <div class="skills-grid">
         <div class="skill-card reveal">
-          <div class="skill-icon">🤖</div>
+          <div class="skill-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 14H8a5 5 0 0 0-5 5v1a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1a5 5 0 0 0-5-5z"/><circle cx="18" cy="5" r="3"/></svg>
+          </div>
           <h3>大模型与Agent</h3>
-          <p>Transformer架构 · LoRA/PEFT微调 · LangGraph工作流编排 · Agent开发 · Tool Calling · Function Calling · MCP协议</p>
+          <p>Transformer架构 · LoRA/PEFT微调 · LangGraph工作流编排 · Agent开发 · Tool Calling · Function Calling</p>
         </div>
-
         <div class="skill-card reveal">
-          <div class="skill-icon">📚</div>
+          <div class="skill-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
           <h3>RAG与知识库</h3>
-          <p>向量数据库 · Embedding模型 · Rerank重排序 · 混合检索策略 · 知识图谱构建 · 多模态RAG · GraphRAG</p>
+          <p>Embedding · 向量检索 · Rerank重排序 · 混合检索策略 · 知识库构建 · 问答链路设计 · 多模态RAG</p>
         </div>
-
         <div class="skill-card reveal">
-          <div class="skill-icon">⚡</div>
+          <div class="skill-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
           <h3>模型服务与部署</h3>
-          <p>ONNX模型导出与量化 · Huggingface生态 · vLLM推理加速 · Ollama本地部署 · 模型压缩 · 服务化部署</p>
+          <p>ONNX模型导出与量化 · Hailo-8 · RK3588边缘设备部署 · 模型压缩 · 推理加速 · 服务化部署</p>
         </div>
-
         <div class="skill-card reveal">
-          <div class="skill-icon">🛠️</div>
+          <div class="skill-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
           <h3>开发工具与框架</h3>
-          <p>Python · Flask · FastAPI · MySQL · Redis · Docker · Linux · Git · Nginx · 前端基础</p>
+          <p>Python · Flask · FastAPI · MySQL · Redis · Docker · Linux · Git</p>
         </div>
-
         <div class="skill-card reveal">
-          <div class="skill-icon">🧠</div>
-          <h3>AI算法</h3>
-          <p>PyTorch · TensorFlow · 大语言模型 · 多模态模型 · 计算机视觉 · 自然语言处理 · 推荐系统</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">📡</div>
-          <h3>信号处理与诊断</h3>
-          <p>小波变换 · 随机森林 · 贝叶斯网络 · 故障信号分析 · 分类建模 · 智能诊断</p>
+          <div class="skill-icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>机器学习与数据分析</h3>
+          <p>XGBoost · 随机森林 · 贝叶斯网络 · 时序预测 · 分类建模 · 模型评估 · 数据分析</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
+  <!-- Organizational Experience -->
   <section class="section">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">联系方式</div>
+        <div class="section-eyebrow">组织经历</div>
+        <h2 class="section-title">课外活动</h2>
+        <p class="section-desc">积极参与行业竞赛与技术培训。</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-badge">赛事组</span>
+          <h3>第一届全国应急管理大模型智能体创新大赛</h3>
+          <p class="edu-date">2026年01月 - 2026年03月</p>
+          <p>负责高危场景识别、遥感影像识别等赛道方案设计、评选机制、题库等</p>
+        </div>
+
+        <div class="edu-card reveal">
+          <span class="edu-badge">讲师</span>
+          <h3>地震垂直领域AI大模型开发与应用高级研修班</h3>
+          <p class="edu-date">2025年07月 - 2025年08月</p>
+          <p>负责设备环境配置、代码撰写、课件制作、疑难解答。培训学员来自台网中心、江苏省地震局等，获得一致好评</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" style="background: var(--color-bg-alt);">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-eyebrow">联系方式</div>
         <h2 class="section-title">取得联系</h2>
-        <p class="section-subtitle">期待与您交流合作</p>
+        <p class="section-desc">期待与您交流合作。</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-card reveal">
-          <div class="icon">📧</div>
+          <div class="icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
           <h4>邮箱</h4>
           <p><a href="mailto:sizhen02621@gmail.com">sizhen02621@gmail.com</a></p>
         </div>
         <div class="contact-card reveal">
-          <div class="icon">📱</div>
+          <div class="icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
           <h4>电话</h4>
-          <p>18438252151</p>
+          <p>18438252515</p>
         </div>
         <div class="contact-card reveal">
-          <div class="icon">🐙</div>
+          <div class="icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
           <h4>GitHub</h4>
-          <p><a href="https://github.com/foxpup11" target="_blank">github.com/foxpup11</a></p>
+          <p><a href="https://github.com/foxpup11" target="_blank">foxpup11</a></p>
         </div>
         <div class="contact-card reveal">
-          <div class="icon">📍</div>
+          <div class="icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
           <h4>所在地</h4>
           <p>北京 / 郑州</p>
         </div>
@@ -247,17 +278,12 @@
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-left">
-        &copy; 2026 司震 · Built with ❤️ and GitHub Pages
+      <div class="footer-bottom">
+        <p>&copy; 2026 司震. All rights reserved.</p>
       </div>
-      <ul class="footer-links">
-        <li><a href="https://github.com/foxpup11" target="_blank">GitHub</a></li>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="projects.html">项目</a></li>
-      </ul>
     </div>
   </footer>
 
