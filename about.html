@@ -1,43 +1,266 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 { color: #667eea; margin-bottom: 1.5rem; }
-        .card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        a { color: #667eea; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 - 司震</title>
+  <meta name="description" content="司震 - AI工程师个人介绍，教育背景、工作经历与技术能力">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>关于我</h1>
-    <div class="card">
-        <h3>🎓 教育背景</h3>
-        <p>XX 大学 计算机科学与技术</p>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SZ</span>
+        司震
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="index.html#skills">技术栈</a></li>
+        <li><a href="index.html#projects">项目</a></li>
+        <li><a href="index.html#experience">经历</a></li>
+        <li><a href="about.html" class="active">关于我</a></li>
+        <li><a href="projects.html" class="nav-cta">项目详情</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="card">
-        <h3>💼 实习经历</h3>
-        <p>联通产业互联网公司 实习生</p>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <div class="page-header">
+    <div class="container">
+      <div class="section-label">ABOUT ME</div>
+      <h1>关于我</h1>
+      <p>一名热爱AI技术、专注于大模型工程化落地的研究生</p>
     </div>
-    <div class="card">
-        <h3>🛠 技术栈</h3>
-        <p>Java, Python, JavaScript, Git, Docker</p>
+  </div>
+
+  <!-- ===== About Intro ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="detail-card reveal">
+        <h2>👋 自我介绍</h2>
+        <p class="desc">
+          我是司震，目前就读于应急管理大学（中国地震局联建）计算机与信息工程学院，攻读硕士学位，研究方向为灾害信息处理技术与地震AI大模型。
+          <br><br>
+          我热衷于将前沿AI技术转化为解决实际问题的工程化方案。在过去的一年多里，我先后在中科院空天院、北京全睿智科技和联通产业互联网公司实习，
+          积累了从算法研究到工程落地的完整经验。我的工作涵盖大模型微调、Agent智能体系统设计、RAG知识库构建、多模态文档理解等多个前沿方向。
+          <br><br>
+          我相信AI技术的核心价值在于赋能行业、解决真实问题。未来我将继续深耕AI Agent与大模型应用开发方向，致力于构建更智能、更可靠的AI系统。
+        </p>
+      </div>
     </div>
-    <p><a href="index.html">← 返回首页</a></p>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">教育背景</div>
+        <h2 class="section-title">教育经历</h2>
+        <p class="section-subtitle">扎实的学术基础与前沿研究方向</p>
+      </div>
+
+      <div class="edu-cards">
+        <div class="edu-card reveal">
+          <span class="edu-badge">硕士研究生</span>
+          <h3>应急管理大学（中国地震局联建）</h3>
+          <h4>计算机与信息工程学院</h4>
+          <p class="edu-date">2024年09月 - 2027年06月</p>
+          <p>
+            研究方向：灾害信息处理技术 · 地震AI大模型<br>
+            初试分数364分（排名1/31）
+          </p>
+        </div>
+
+        <div class="edu-card reveal">
+          <span class="edu-badge">本科</span>
+          <h3>中原工学院</h3>
+          <h4>软件学院</h4>
+          <p class="edu-date">2020年09月 - 2024年06月</p>
+          <p>
+            软件工程（大数据方向）<br>
+            GPA 3.45/5.0（前11%）· 校级优秀毕业生
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Work Experience ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">工作经历</div>
+        <h2 class="section-title">实习经历</h2>
+        <p class="section-subtitle">从算法研究到工程落地的成长之路</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026年5月 - 至今</div>
+          <div class="timeline-content">
+            <h3>大模型实习生</h3>
+            <h4>联通（河南）产业互联网有限公司 | 智慧城市军团</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
+              项目：社情通 — 面向基层社会治理的12345热线数据分析平台
+            </p>
+            <ul>
+              <li>负责热线数据解析与深度分析，构建大规模事件分类、舆情智能监测与报告自动生成系统</li>
+              <li>主导知识识别、热点总结与事件建议生成的Prompt设计与接口落地</li>
+              <li>实现多模态能力接入与Ollama本地模型集成，驱动智能质检功能</li>
+              <li>完成基于DeepSeek模型的智能质检全流程开发，模型分类准确率95%+</li>
+              <li>开发自动化数据清洗模块，处理多源异构数据，大幅提升分析效率</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025年11月 - 2026年5月</div>
+          <div class="timeline-content">
+            <h3>算法实习生（DataDigger方向）</h3>
+            <h4>中国科学院空天信息创新研究院 | 北京中科闻歌科技发展有限公司</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
+              项目：DataDigger — 基于DAG拓扑扩展的AI Agent低代码开发平台
+            </p>
+            <ul>
+              <li>负责Agent工作流开发及模型推理服务封装，基于FastAPI构建接入层并添加DAG引擎注入</li>
+              <li>开发Tool Calling工具链，通过数据回填机制扩展Agent能力边界，支持参数与来源动态绑定</li>
+              <li>开发贝叶斯网络训练/推理、回溯、聚类等节点的底层算法模块</li>
+              <li>基于Supernote千问子模型、单步调试与Con机制，实现工具集成与灵活编排</li>
+              <li>主导Agent平台200+自动化回归测试用例编写与性能压测，已上线多个生产环境</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025年9月 - 2025年11月</div>
+          <div class="timeline-content">
+            <h3>算法实习生</h3>
+            <h4>北京全睿智科技有限公司</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
+              项目：工业文档智能解析与问答平台 / "智问"多模型智能对话助手
+            </p>
+            <ul>
+              <li>构建多模态文档智能解析Pipeline，集成OCR识别、图文对应及知识抽取能力</li>
+              <li>实现GraphRAG知识图谱构建与智能问答系统</li>
+              <li>基于Qwen2.5-7B进行LoRA微调，优化模型在特定场景下的表现</li>
+              <li>完成文件解析、知识抽取、模型推理、问答服务等全模块开发</li>
+              <li>系统完整落地企业内部RAG平台并投入实际应用</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Detail ===== -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">专业技能</div>
+        <h2 class="section-title">技能清单</h2>
+        <p class="section-subtitle">全栈AI工程师的技术能力图谱</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>大模型与Agent</h3>
+          <p>Transformer架构 · LoRA/PEFT微调 · LangGraph工作流编排 · Agent开发 · Tool Calling · Function Calling · MCP协议</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📚</div>
+          <h3>RAG与知识库</h3>
+          <p>向量数据库 · Embedding模型 · Rerank重排序 · 混合检索策略 · 知识图谱构建 · 多模态RAG · GraphRAG</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>模型服务与部署</h3>
+          <p>ONNX模型导出与量化 · Huggingface生态 · vLLM推理加速 · Ollama本地部署 · 模型压缩 · 服务化部署</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>开发工具与框架</h3>
+          <p>Python · Flask · FastAPI · MySQL · Redis · Docker · Linux · Git · Nginx · 前端基础</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧠</div>
+          <h3>AI算法</h3>
+          <p>PyTorch · TensorFlow · 大语言模型 · 多模态模型 · 计算机视觉 · 自然语言处理 · 推荐系统</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📡</div>
+          <h3>信号处理与诊断</h3>
+          <p>小波变换 · 随机森林 · 贝叶斯网络 · 故障信号分析 · 分类建模 · 智能诊断</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">联系方式</div>
+        <h2 class="section-title">取得联系</h2>
+        <p class="section-subtitle">期待与您交流合作</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="icon">📧</div>
+          <h4>邮箱</h4>
+          <p><a href="mailto:sizhen02621@gmail.com">sizhen02621@gmail.com</a></p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">📱</div>
+          <h4>电话</h4>
+          <p>18438252151</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">🐙</div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/foxpup11" target="_blank">github.com/foxpup11</a></p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">📍</div>
+          <h4>所在地</h4>
+          <p>北京 / 郑州</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        &copy; 2026 司震 · Built with ❤️ and GitHub Pages
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/foxpup11" target="_blank">GitHub</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="projects.html">项目</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

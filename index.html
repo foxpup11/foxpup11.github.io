@@ -1,52 +1,391 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            background: white;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            max-width: 600px;
-            text-align: center;
-        }
-        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #667eea; }
-        p { font-size: 1.2rem; color: #666; margin-bottom: 1.5rem; }
-        .links a {
-            display: inline-block;
-            margin: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: transform 0.2s;
-        }
-        .links a:hover { transform: translateY(-2px); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>司震 - AI工程师 | 个人主页</title>
+  <meta name="description" content="司震 - 大模型与Agent开发工程师，专注于RAG、多模态AI与智能体系统开发">
+  <meta name="keywords" content="司震, AI工程师, Agent开发, 大模型, RAG, 深度学习">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar">
     <div class="container">
-        <h1>👋 你好，我是你的名字</h1>
-        <p>联通产业互联网公司实习生 | 正在学习企业级 Git</p>
-        <div class="links">
-            <a href="https://github.com/your-name">GitHub</a>
-            <a href="about.html">关于我</a>
-        </div>
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SZ</span>
+        司震
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">首页</a></li>
+        <li><a href="#skills">技术栈</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="projects.html" class="nav-cta">项目详情</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          开放合作机会
+        </div>
+        <h1 class="hero-title">
+          你好，我是<br>
+          <span class="highlight">司震</span>
+        </h1>
+        <p class="hero-description">
+          <span class="typing-text" data-texts='["AI Agent 工程师","RAG 系统架构师","大模型应用开发者","多模态AI研究者"]'>AI Agent 工程师</span>
+          <span style="border-right:2px solid var(--accent);animation:blink 1s infinite;margin-left:2px;">&nbsp;</span>
+        </p>
+        <p class="hero-description">
+          专注于大语言模型应用开发、Agent智能体系统设计与RAG知识库构建。
+          致力于将前沿AI技术落地为解决实际问题的工程化方案。
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            查看项目
+          </a>
+          <a href="about.html" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            关于我
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">实习经历</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">核心项目</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">技术栈</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar">震</div>
+          <div class="float-tag">🤖 Agent开发</div>
+          <div class="float-tag">🧠 大模型</div>
+          <div class="float-tag">📊 RAG</div>
+          <div class="float-tag">⚡ LoRA微调</div>
+          <div class="float-tag">🔧 FastAPI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">技术能力</div>
+        <h2 class="section-title">核心技术栈</h2>
+        <p class="section-subtitle">覆盖大模型开发全链路，从训练微调到部署推理，从知识构建到智能体系统</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>大模型与Agent开发</h3>
+          <p>精通Transformer架构，掌握LoRA/PEFT微调技术，熟悉LangGraph工作流编排与Agent开发，具备完整的Tool Calling、Function Calling及MCP协议实战经验。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Transformer</span>
+            <span class="skill-tag">LoRA/PEFT</span>
+            <span class="skill-tag">LangGraph</span>
+            <span class="skill-tag">Tool Calling</span>
+            <span class="skill-tag">MCP</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📚</div>
+          <h3>RAG与知识库</h3>
+          <p>熟练使用向量数据库、Embedding模型、Rerank及混合检索策略，具备知识图谱构建与多模态RAG开发经验，打造企业级智能问答系统。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">向量数据库</span>
+            <span class="skill-tag">Embedding</span>
+            <span class="skill-tag">Rerank</span>
+            <span class="skill-tag">知识图谱</span>
+            <span class="skill-tag">混合检索</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>模型服务与推理优化</h3>
+          <p>掌握ONNX模型导出及量化流程，熟悉Huggingface生态，具备模型压缩、推理加速与服务化部署的完整工程能力。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">ONNX</span>
+            <span class="skill-tag">量化</span>
+            <span class="skill-tag">Huggingface</span>
+            <span class="skill-tag">推理加速</span>
+            <span class="skill-tag">vLLM</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>AI工程开发</h3>
+          <p>精通Python生态，熟练使用Flask、FastAPI、MySQL、Redis、Docker、Linux等技术，具备AI应用开发与生产环境部署的全栈能力。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📡</div>
+          <h3>机械故障诊断与信号处理</h3>
+          <p>掌握小波变换、随机森林、贝叶斯网络等算法，具备故障信号分析、分类建模与智能诊断的完整科研能力。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">小波变换</span>
+            <span class="skill-tag">随机森林</span>
+            <span class="skill-tag">贝叶斯网络</span>
+            <span class="skill-tag">信号处理</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔬</div>
+          <h3>科研成果</h3>
+          <p>发表SCI/EI期刊论文，提出SOTA级算法优化方案，在ICLR等顶级会议发表研究成果，具备扎实的学术研究与论文写作能力。</p>
+          <div class="skill-tags">
+            <span class="skill-tag">SCI/EI论文</span>
+            <span class="skill-tag">SOTA算法</span>
+            <span class="skill-tag">ICLR</span>
+            <span class="skill-tag">学术研究</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="section" id="projects" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">项目经历</div>
+        <h2 class="section-title">核心项目</h2>
+        <p class="section-subtitle">覆盖智慧城市、金融风控、工业智能等多个领域的AI落地实践</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🏛️</div>
+            <span class="project-period">2026.05 - 至今</span>
+          </div>
+          <div class="project-body">
+            <h3>社情通 · 大规模社情事件分析系统</h3>
+            <p class="project-company">联通（河南）产业互联网有限公司 | 智慧城市军团</p>
+            <p>面向基层社会治理的12345热线数据分析平台，构建多维度动态监控看板，实现大规模事件分类、舆情智能监测与分析报告自动生成。</p>
+            <div class="project-tech">
+              <span>大模型</span>
+              <span>多模态</span>
+              <span>Agent</span>
+              <span>知识库</span>
+              <span>ASR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">💰</div>
+            <span class="project-period">2025.09 - 2025.11</span>
+          </div>
+          <div class="project-body">
+            <h3>DataDigger · AI金融风控平台</h3>
+            <p class="project-company">北京全睿智科技有限公司</p>
+            <p>面向复杂业务场景的AI决策辅助平台，实现多模型管理、知识管理与模型市场功能，支持可视化建模与流程编排。</p>
+            <div class="project-tech">
+              <span>DAG编排</span>
+              <span>Tool Calling</span>
+              <span>FastAPI</span>
+              <span>数据回填</span>
+              <span>SFT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">💬</div>
+            <span class="project-period">2025.09 - 2025.11</span>
+          </div>
+          <div class="project-body">
+            <h3>"智问" · 多模型智能对话助手</h3>
+            <p class="project-company">北京全睿智科技有限公司</p>
+            <p>基于DAG路由的多模型架构，集成RAG知识库与本地化部署能力，支持多模型路由匹配和Prompt自适应调整。</p>
+            <div class="project-tech">
+              <span>多模型路由</span>
+              <span>RAG</span>
+              <span>Docker</span>
+              <span>本地化部署</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">📄</div>
+            <span class="project-period">2025.09 - 2025.11</span>
+          </div>
+          <div class="project-body">
+            <h3>工业文档智能解析与问答平台</h3>
+            <p class="project-company">北京全睿智科技有限公司</p>
+            <p>构建多模态文档理解Pipeline，实现OCR识别、图文对应及知识抽取，结合GraphRAG技术构建结构化知识图谱。</p>
+            <div class="project-tech">
+              <span>OCR</span>
+              <span>多模态</span>
+              <span>GraphRAG</span>
+              <span>知识抽取</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;" class="reveal">
+        <a href="projects.html" class="btn btn-primary">查看完整项目列表 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Section ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">工作经历</div>
+        <h2 class="section-title">职业历程</h2>
+        <p class="section-subtitle">从算法研究到工程落地，持续深耕AI领域</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026年5月 - 至今</div>
+          <div class="timeline-content">
+            <h3>大模型实习生</h3>
+            <h4>联通（河南）产业互联网有限公司 | 智慧城市军团</h4>
+            <ul>
+              <li>负责12345热线数据分析，构建大规模事件分类与舆情智能监测系统</li>
+              <li>主导知识识别、热点总结与事件建议生成的Prompt设计与接口落地</li>
+              <li>实现多模态能力接入与Ollama本地模型集成，驱动智能质检功能</li>
+              <li>完成基于DeepSeek模型的智能质检全流程开发，推动项目上线</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025年11月 - 2026年5月</div>
+          <div class="timeline-content">
+            <h3>算法实习生（DataDigger方向）</h3>
+            <h4>中国科学院空天信息创新研究院 | 北京中科闻歌科技发展有限公司</h4>
+            <ul>
+              <li>负责Agent工作流开发及模型推理服务封装，实现DAG任务编排</li>
+              <li>开发Tool Calling工具链，通过数据回填机制扩展Agent能力边界</li>
+              <li>开发贝叶斯网络训练/推理、数据清洗等核心算法模块</li>
+              <li>主导Agent平台200+自动化回归测试与性能压测，日均处理请求10万+</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025年9月 - 2025年11月</div>
+          <div class="timeline-content">
+            <h3>算法实习生</h3>
+            <h4>北京全睿智科技有限公司</h4>
+            <ul>
+              <li>构建多模态文档智能解析Pipeline，集成OCR与知识抽取能力</li>
+              <li>实现GraphRAG知识图谱构建与智能问答系统</li>
+              <li>基于Qwen2.5-7B进行LoRA微调，优化模型在特定场景下的表现</li>
+              <li>系统完整落地企业内部RAG平台并投入实际应用</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section" id="contact" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">联系方式</div>
+        <h2 class="section-title">取得联系</h2>
+        <p class="section-subtitle">期待与您交流合作</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="icon">📧</div>
+          <h4>邮箱</h4>
+          <p><a href="mailto:sizhen02621@gmail.com">sizhen02621@gmail.com</a></p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">📱</div>
+          <h4>电话</h4>
+          <p>18438252151</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">🐙</div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/foxpup11" target="_blank">github.com/foxpup11</a></p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="icon">📍</div>
+          <h4>所在地</h4>
+          <p>北京 / 郑州</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        &copy; 2026 司震 · Built with ❤️ and GitHub Pages
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/foxpup11" target="_blank">GitHub</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="projects.html">项目</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <style>
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
