@@ -1,0 +1,146 @@
+{
+  "username": "qq_51605551",
+  "updatedAt": "2026-06-26T00:54:35.083Z",
+  "articles": [
+    {
+      "title": "MCP协议",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/162068898",
+      "pubDate": "2026-06-17T06:39:59.000Z",
+      "description": "这张图不仅仅展示了架构的简化，它展示了生产力的释放。MCP 的本质，就是将 AI 与数据的连接标准化。它打破了模型与本地/云端数据之间的孤岛，让 AI 真正从“聊天机器人”变成了能操作万物的“智能体”。对于开发者来说，这意味着你终于可以停止造轮子，开始专注于构建真正有价值的 AI 应用了。",
+      "category": null
+    },
+    {
+      "title": "github实战指南07-CLI 与高级技巧",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972799",
+      "pubDate": "2026-06-14T03:01:50.000Z",
+      "description": "GitHub Copilot 是 AI 编程助手：- 自动补全代码- 根据注释生成代码- 解释代码- 修复 Bug。",
+      "category": null
+    },
+    {
+      "title": "github实战指南06- Pages 部署网站",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972782",
+      "pubDate": "2026-06-14T03:01:18.000Z",
+      "description": "本章目标：用 GitHub Pages 免费部署你的静态网站，获得一个的网站。",
+      "category": null
+    },
+    {
+      "title": "github实战指南05-Fork与开源协作",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972755",
+      "pubDate": "2026-06-14T03:00:10.000Z",
+      "description": "本章目标：掌握 Fork 工作流，学会参与开源项目贡献代码。",
+      "category": null
+    },
+    {
+      "title": "github实战指南04-Actions 自动化实战",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972737",
+      "pubDate": "2026-06-14T02:59:33.000Z",
+      "description": "本章目标：理解 CI/CD 原理，亲手配置一个 GitHub Actions 工作流。",
+      "category": null
+    },
+    {
+      "title": "github实战指南03-Pull Request 全流程实战",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972720",
+      "pubDate": "2026-06-14T02:58:43.000Z",
+      "description": "本章目标：完整走一遍 PR 的创建、Review、合并全流程，这是企业开发中最高频的操作。",
+      "category": null
+    },
+    {
+      "title": "github实战指南02-仓库管理与 Issue",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972706",
+      "pubDate": "2026-06-14T02:58:01.000Z",
+      "description": "本章目标：掌握 GitHub 仓库的日常管理，学会用 Issue 跟踪任务和 Bug。⚠️ 本章大部分操作都在中完成，不需要命令行。",
+      "category": null
+    },
+    {
+      "title": "github实战指南01-账号配置与 SSH 密钥",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972697",
+      "pubDate": "2026-06-14T02:57:30.000Z",
+      "description": "本章目标：注册 GitHub 账号，配置好 SSH 密钥，做到\"克隆仓库不用输密码\"。",
+      "category": null
+    },
+    {
+      "title": "github实战指南00-命令在哪里执行？",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972682",
+      "pubDate": "2026-06-14T02:56:45.000Z",
+      "description": "本文介绍了Windows系统下Git命令执行环境的配置与使用指南。主要内容包括： 终端选择：推荐使用Git Bash（Linux风格命令）而非CMD/PowerShell，因其与Linux服务器命令一致且避免编码问题。 打开方式：提供三种启动Git Bash的方法（开始菜单搜索、右键菜单、VS Code内置终端），并详细说明如何将Git Bash设为VS Code默认终端。 命令对比：列出常用命令",
+      "category": null
+    },
+    {
+      "title": "agent面试题",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161972345",
+      "pubDate": "2026-06-14T02:40:14.000Z",
+      "description": "【代码】agent面试题。",
+      "category": null
+    },
+    {
+      "title": "XZ09_Word和MD格式转换",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161613887",
+      "pubDate": "2026-06-02T02:16:08.000Z",
+      "description": "先试方案一中的参数，这通常能直接解决文字破碎的问题。如果公式依然显示为乱码文本（如），说明 Word 里的公式太老旧，建议使用截图重新生成 LaTeX 代码替换进去，这是最稳妥的办法。Markdown 文档完全可以转换成 Word 文档，而且有多种成熟的方法可以实现。针对你之前提到的“公式排版”痛点，在反向转换（MD → Word）时，Pandoc 依然是最佳选择，但需要配合特定的参数才能保证公式",
+      "category": null
+    },
+    {
+      "title": "在Claude code中部署Deepseek模型",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/161480676",
+      "pubDate": "2026-05-28T03:47:15.000Z",
+      "description": "要在 Claude Code 中使用 DeepSeek V4 模型，核心思路就是“偷梁换柱”：告诉 Claude Code 不要去找国外的官方接口，而是去调用 DeepSeek 的接口。因为官方接口国内无法直连，我们可以接入支持 Anthropic 协议的国产大模型（如 DeepSeek、通义千问等），不仅速度快，性价比也极高。如果你觉得改代码麻烦，或者想随时在 DeepSeek、Kimi、智谱等",
+      "category": null
+    },
+    {
+      "title": "XZ08_本地部署overleaf教程",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/159084527",
+      "pubDate": "2026-03-15T08:33:44.000Z",
+      "description": "通过以上步骤，你就可以在本地搭建一个功能完整的 Overleaf 编辑器，享受与 overleaf.com 相似的编辑体验，同时摆脱免费版编译时长的限制。核心优势✅ 无编译时长限制✅ 数据本地存储，更安全✅ 可自定义配置，适配学校要求✅ 一次性部署，长期使用希望这篇教程能给还在观望 Latex 和使用 Latex 遇到困难的同学们一点启发！如果觉得本文对你有帮助，欢迎三连支持！👍标签LaTeXO",
+      "category": null
+    },
+    {
+      "title": "XZ07_解决WORD中间单词间隔过大的问题",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/158921613",
+      "pubDate": "2026-03-11T03:22:02.000Z",
+      "description": "",
+      "category": null
+    },
+    {
+      "title": "XZ06_关于Mathtype公式是图片的问题",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/156685794",
+      "pubDate": "2026-01-07T05:27:55.000Z",
+      "description": "摘要：解决MathType公式在他人电脑显示为图片的问题，建议转换为Word原生公式格式。操作步骤：安装MathType后，在Word中选择\"Convert Equations\"，转换为Microsoft Equation格式（OMML），该格式在Word 2007及以上版本均可编辑。转换前需备份文档，新版WPS也支持该格式显示和简单编辑。该方法能确保公式跨平台兼容性。（150字）",
+      "category": null
+    },
+    {
+      "title": "AI大模型03_RAG入门",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/151576873",
+      "pubDate": "2025-09-11T05:21:07.000Z",
+      "description": "RAG（Retrieval-Augmented Generation，检索增强生成）是一种结合了信息检索与生成式AI的技术框架，旨在提升大语言模型（LLM）生成内容的准确性可靠性和相关性。其核心思路是：在生成回答前，先从外部知识库中检索与问题相关的信息，再将这些信息作为\"参考资料\"输入给模型，辅助其生成更贴合事实的结果。与传统生成式AI（如ChatGPT）相比，RAG解决了两大关键局限：一是知识截",
+      "category": null
+    },
+    {
+      "title": "XZ05_关于矢量图导入CorelDraw软件的一些问题",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/151576670",
+      "pubDate": "2025-09-11T05:10:28.000Z",
+      "description": "将非 CorelDRAW 制作的图形转换成符合期刊要求的 CDR 格式需要一些步骤和注意细节。核心思路是：确保图形最终是矢量格式（可编辑），并尽可能在导出/转换前就满足期刊的格式细节（字体、字号、线宽等）。以下是如何针对你使用的工具进行操作的步骤和建议：核心目标：获得符合要求的 CorelDRAW (.cdr) 矢量文件。•   关键：导出为矢量格式！•   关键：导出为高质量矢量格式！•   警",
+      "category": null
+    },
+    {
+      "title": "XZ04_解决typora无法识别行内公式的问题",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/148717275",
+      "pubDate": "2025-06-17T07:50:16.000Z",
+      "description": "在技术写作、笔记整理和文档编辑的领域，Typora和Markdown已经成为开发者、学生和内容创作者的必备工具。它们以简洁、高效和跨平台兼容性著称，尤其适合需要频繁撰写技术文档、博客或学术论文的用户。本文将从基础概念入手，深入解析 Markdown 的原理和 Typora 的功能，并结合实际应用场景，帮助你快速上手这两个工具。Markdown 是一种轻量级标记语言，由 John Gruber 于 ",
+      "category": null
+    },
+    {
+      "title": "AI大模型02_Dify平台介绍",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/148278051",
+      "pubDate": "2025-05-28T02:00:31.000Z",
+      "description": "在生成式AI技术快速发展的背景下，企业对AI应用的需求从“实验室原型”转向“生产级落地”。然而，复杂的开发流程、高昂的部署成本以及技术门槛，成为制约企业落地AI的关键瓶颈。无论是企业用户还是开发者，都能通过这一平台快速构建智能客服、内容生成、数据分析等应用，显著降低技术门槛与成本。随着与亚马逊云科技的深度集成与社区生态的扩展，Dify正成为企业AI转型的核心引擎。，为企业和开发者提供了从模型集成到",
+      "category": null
+    },
+    {
+      "title": "AI大模型01_Hugging Face平台介绍",
+      "link": "https://blog.csdn.net/qq_51605551/article/details/148277681",
+      "pubDate": "2025-05-28T01:56:14.000Z",
+      "description": "它不仅提供了丰富的预训练模型库、高效的数据处理工具，还通过开源社区和开放API推动了AI技术的普及与创新。从快速推理到复杂微调，从研究探索到生产部署，Hugging Face提供了全方位的支持。随着技术的不断演进，Hugging Face将继续推动AI的普及与创新。它以其强大的预训练模型、易用的API和活跃的社区著称，为开发者和研究人员提供了从研究到工业级应用的完整解决方案。是Hugging Fa",
+      "category": null
+    }
+  ]
+}
